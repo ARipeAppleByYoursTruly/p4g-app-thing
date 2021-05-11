@@ -1,0 +1,955 @@
+<!doctype html>
+<html>
+<head>
+<title>Fusion Calc</title>
+
+<meta charset='UTF-8'>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src='fusion_calc.js'></script>
+<script src='fusion_chart.js'></script>
+
+<link rel='stylesheet' href='fusion_chart.css'>
+</head>
+<body>
+
+<h1>P4G Fusion Calculator</h1><br>
+<a href='../index.html'>Home</a><br><br>
+<button id='tf_y_n'>Switch to Triple Fusion</button><br><br>
+<form id='fusion_ui'>
+<datalist id='personas'>
+  <option value='Abaddon'>
+  <option value='Alice'>
+  <option value='Alilat'>
+  <option value='Alraune'>
+  <option value='Ame-no-Uzume'>
+  <option value='Ananta'>
+  <option value='Andra'>
+  <option value='Angel'>
+  <option value='Anubis'>
+  <option value='Anzu'>
+  <option value='Apsaras'>
+  <option value='Ara Mitama'>
+  <option value='Arahabaki'>
+  <option value='Archangel'>
+  <option value='Ardha'>
+  <option value='Ares'>
+  <option value='Asura'>
+  <option value='Atavaka'>
+  <option value='Atropos'>
+  <option value='Attis'>
+  <option value='Baal Zebul'>
+  <option value='Baphomet'>
+  <option value='Barong'>
+  <option value='Beelzebub'>
+  <option value='Belial'>
+  <option value='Belphegor'>
+  <option value='Berith'>
+  <option value='Black Frost'>
+  <option value='Byakko'>
+  <option value='Cerberus'>
+  <option value='Chernobog'>
+  <option value='Clotho'>
+  <option value='Cu Chulainn'>
+  <option value='Cu Sith'>
+  <option value='Cybele'>
+  <option value='Daisoujou'>
+  <option value='Decarabia'>
+  <option value='Dis'>
+  <option value='Dominion'>
+  <option value='Eligor'>
+  <option value='Flauros'>
+  <option value='Forneus'>
+  <option value='Fortuna'>
+  <option value='Futsunushi'>
+  <option value='Fuu-ki'>
+  <option value='Gabriel'>
+  <option value='Ganesha'>
+  <option value='Ganga'>
+  <option value='Garuda'>
+  <option value='Gdon'>
+  <option value='Genbu'>
+  <option value='Ghoul'>
+  <option value='Girimehkala'>
+  <option value='Gorgon'>
+  <option value='Gurr'>
+  <option value='Hachiman'>
+  <option value='Hanuman'>
+  <option value='Hariti'>
+  <option value='Helel'>
+  <option value='Hell Biker'>
+  <option value='High Pixie'>
+  <option value='Hitokotonusi'>
+  <option value='Hokuto Seikun'>
+  <option value='Horus'>
+  <option value='Hua Po'>
+  <option value='Ikusa'>
+  <option value='Incubus'>
+  <option value='Ippon-Datara'>
+  <option value='Ishtar'>
+  <option value='Isis'>
+  <option value='Izanagi'>
+  <option value='Jack Frost'>
+  <option value='Jatayu'>
+  <option value='Jinn'>
+  <option value='Kaguya'>
+  <option value='Kaiwan'>
+  <option value='Kali'>
+  <option value='Kartikeya'>
+  <option value='Kikuri-Hime'>
+  <option value='Kin-ki'>
+  <option value='King Frost'>
+  <option value='Kingu'>
+  <option value='Kohryu'>
+  <option value='Kumbhanda'>
+  <option value='Kurama Tengu'>
+  <option value='Kushinada'>
+  <option value='Kusi Mitama'>
+  <option value='Lachesis'>
+  <option value='Laksmi'>
+  <option value='Lamia'>
+  <option value='Leanan Sidhe'>
+  <option value='Legion'>
+  <option value='Lilim'>
+  <option value='Lilith'>
+  <option value='Loa'>
+  <option value='Loki'>
+  <option value='Lucifer'>
+  <option value='Mada'>
+  <option value='Magatsu Izanagi'>
+  <option value='Mahakala'>
+  <option value='Makami'>
+  <option value='Mara'>
+  <option value='Masakado'>
+  <option value='Matador'>
+  <option value='Melchizedek'>
+  <option value='Metatron'>
+  <option value='Michael'>
+  <option value='Mithra'>
+  <option value='Mokoi'>
+  <option value='Mot'>
+  <option value='Mother Harlot'>
+  <option value='Mothman'>
+  <option value='Narasimha'>
+  <option value='Narcissus'>
+  <option value='Nata Taishi'>
+  <option value='Nebiros'>
+  <option value='Neko Shogun'>
+  <option value='Niddhoggr'>
+  <option value='Nigi Mitama'>
+  <option value='Norn'>
+  <option value='Nozuchi'>
+  <option value='Obariyon'>
+  <option value='Oberon'>
+  <option value='Odin'>
+  <option value='Omoikane'>
+  <option value='Ongyo-ki'>
+  <option value='Oni'>
+  <option value='Orobas'>
+  <option value='Orthrus'>
+  <option value='Ose'>
+  <option value='Oukuninushi'>
+  <option value='Pabilsag'>
+  <option value='Pale Rider'>
+  <option value='Parvati'>
+  <option value='Pazuzu'>
+  <option value='Phoenix'>
+  <option value='Pixie'>
+  <option value='Power'>
+  <option value='Principality'>
+  <option value='Pyro Jack'>
+  <option value='Queen Mab'>
+  <option value='Quetzalcoatl'>
+  <option value='Raja Naga'>
+  <option value='Rakshasa'>
+  <option value='Rangda'>
+  <option value='Raphael'>
+  <option value='Saki Mitama'>
+  <option value='Samael'>
+  <option value='Sandalphon'>
+  <option value='Sandman'>
+  <option value='Sarasvati'>
+  <option value='Satan'>
+  <option value='Sati'>
+  <option value='Saturnus'>
+  <option value='Scathach'>
+  <option value='Seiryuu'>
+  <option value='Seiten Taisei'>
+  <option value='Senri'>
+  <option value='Setanta'>
+  <option value='Seth'>
+  <option value='Shiisaa'>
+  <option value='Shiki-Ouji'>
+  <option value='Shiva'>
+  <option value='Siegfried'>
+  <option value='Skadi'>
+  <option value='Slime'>
+  <option value='Sraosha'>
+  <option value='Succubus'>
+  <option value='Sui-ki'>
+  <option value='Suparna'>
+  <option value='Surt'>
+  <option value='Suzaku'>
+  <option value='Sylph'>
+  <option value='Take-Minakata'>
+  <option value='Tam Lin'>
+  <option value='Taotie'>
+  <option value='Taowu'>
+  <option value='Thor'>
+  <option value='Thoth'>
+  <option value='Throne'>
+  <option value='Titan'>
+  <option value='Titania'>
+  <option value='Triglav'>
+  <option value='Trumpeter'>
+  <option value='Tzitzimitl'>
+  <option value='Ukobach'>
+  <option value='Undine'>
+  <option value='Unicorn'>
+  <option value='Uriel'>
+  <option value='Valkyrie'>
+  <option value='Vasuki'>
+  <option value='Vetala'>
+  <option value='Virtue'>
+  <option value='Vishnu'>
+  <option value='White Rider'>
+  <option value='Xiezhai'>
+  <option value='Yaksini'>
+  <option value='Yamatano-Orochi'>
+  <option value='Yatagarasu'>
+  <option value='Yatsufusa'>
+  <option value='Yomotsu-Shikome'>
+  <option value='Yoshitsune'>
+  <option value='Yurlungur'>
+  <option value='Zaou-Gongen'>
+</datalist>
+<div style='padding-right:100px'>
+  <label style='font-size:20px' for='persona1'>First Persona</label><br>
+  <input list='personas' id='persona1' style='user-select:auto'><br>
+  <div class='tie_box' style='position:absolute'>
+    <input type='checkbox' id='tie_1'>
+    <label for='tie_1'>Tied for highest level?</label>
+  </div>
+  <span style='position:absolute; right:40px; top:4px'>+</span><br>
+</div>
+<div style='padding-right:100px'>
+  <label style='font-size:20px' for='persona2'>Second Persona</label><br>
+  <input list='personas' id='persona2' style='user-select:auto'><br>
+  <div class='tie_box' style='position:absolute'>
+    <input type='checkbox' id='tie_2'>
+    <label for='tie_2'>Tied for highest level?</label>
+  </div>
+  <span style='position:absolute; right:40px; top:4px' id='plus_equals'>=</span><br>
+  </div>
+<div style='padding-right:100px' id='third_persona'>
+  <label style='font-size:20px' for='persona3'>Third Persona</label><br>
+  <input list='personas' id='persona3' style='user-select:auto'><br>
+  <span>(Highest level)</span>
+  <span style='position:absolute; right:40px; top:4px'>=</span><br>
+  </div>
+<div>
+  <span id='output'></span>
+</div>
+</form><br>
+
+<div style='position:absolute'>
+<form action="../compendium/persona.html" method='GET' id='button_1'>
+  <input type='hidden' id='info_1'>
+  <input type="submit" value="Check 1st Persona's Info" id='sub_but_1'>
+</form>
+<form action="../compendium/persona.html" method='GET' id='button_2'>
+  <input type='hidden' id='info_2'>
+  <input type="submit" value="Check 2nd Persona's Info" id='sub_but_2'>
+</form>
+<form action="../compendium/persona.html" method='GET' id='button_3'>
+  <input type='hidden' id='info_3'>
+  <input type="submit" value="Check 3rd Persona's Info" id='sub_but_3'>
+</form>
+<form action="../compendium/persona.html" method='GET' id='button_r'>
+  <input type='hidden' id='info_r'>
+  <input type="submit" value="Check fused Persona's Info" id='sub_but_r'>
+</form>
+</div><br><br><br><br><br><br><br>
+
+<button id='hide_showFChart'>Show Fusion Chart</button><br><br>
+<button id='switchJH'>Switch to Hunger</button>
+<button id='clearSelection'>Clear</button><br><br>
+<table>
+  <tr>
+    <th class='same_f'>(xx/xxx)</th>
+    <th class='same_f'>Fool</th>
+    <th class='same_f'>Magician</th>
+    <th class='same_f'>Priestess</th>
+    <th class='same_f'>Empress</th>
+    <th class='same_f'>Emperor</th>
+    <th class='same_f'>Hierophant</th>
+    <th class='same_f'>Lovers</th>
+    <th class='same_f'>Chariot</th>
+    <th class='same_f'>Justice</th>
+    <th class='same_f'>Hermit</th>
+    <th class='same_f'>Fortune</th>
+    <th class='same_f'>Strength</th>
+    <th class='same_f'>Hanged Man</th>
+    <th class='same_f'>Death</th>
+    <th class='same_f'>Temperance</th>
+    <th class='same_f'>Devil</th>
+    <th class='same_f'>Tower</th>
+    <th class='same_f'>Star</th>
+    <th class='same_f'>Moon</th>
+    <th class='same_f'>Sun</th>
+    <th class='same_f'>Judgement</th>
+    <th class='same_f'>Jester</th>
+    <th class='same_f'>Aeon</th>
+    <th class='double_f'>(xy)</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Fool</th>
+    <td class='same_f'>Fool</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Death</td>
+    <th class='same_f'>Fool</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Magician</th>
+    <td class='triple_f'>Fortune</td>
+    <td class='same_f'>Magician</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Emperor</td>
+    <th class='same_f'>Magician</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Priestess</th>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='same_f'>Priestess</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Sun</td>
+    <th class='same_f'>Priestess</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Empress</th>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Temperance</td>
+    <td class='same_f'>Empress</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Temperance</td>
+    <th class='same_f'>Empress</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Emperor</th>
+    <td class='triple_f'>Hermit</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Justice</td>
+    <td class='triple_f'>Fool</td>
+    <td class='same_f'>Emperor</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Hanged Man</td>
+    <th class='same_f'>Emperor</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Hierophant</th>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='same_f'>Hierophant</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Moon</td>
+    <th class='same_f'>Hierophant</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Lovers</th>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Temperance</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='same_f'>Lovers</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Justice</td>
+    <th class='same_f'>Lovers</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Chariot</th>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='same_f'>Chariot</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Strength</td>
+    <th class='same_f'>Chariot</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Justice</th>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Hermit</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Temperance</td>
+    <td class='same_f'>Justice</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Lovers</td>
+    <th class='same_f'>Justice</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Hermit</th>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='same_f'>Hermit</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Magician</td>
+    <th class='same_f'>Hermit</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Fortune</th>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Temperance</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='same_f'>Fortune</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Priestess</td>
+    <th class='same_f'>Fortune</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Strength</th>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Hermit</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Justice</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='same_f'>Strength</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Temperance</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Chariot</td>
+    <th class='same_f'>Strength</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Hanged Man</th>
+    <td class='triple_f'>Star</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Star</td>
+    <td class='triple_f'>Justice</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Star</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Star</td>
+    <td class='same_f'>Hanged Man</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Death</td>
+    <th class='same_f'>Hanged Man</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Death</th>
+    <td class='triple_f'>Star</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Devil</td>
+    <td class='same_f'>Death</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Empress</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Hanged Man</td>
+    <th class='same_f'>Death</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Temperance</th>
+    <td class='triple_f'>Justice</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Justice</td>
+    <td class='triple_f'>Jester</td>
+    <td class='same_f'>Temperance</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Hermit</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Empress</td>
+    <th class='same_f'>Temperance</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Devil</th>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Hermit</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Justice</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Justice</td>
+    <td class='same_f'>Devil</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Magician</td>
+    <th class='same_f'>Devil</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Tower</th>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Justice</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Star</td>
+    <td class='same_f'>Tower</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Chariot</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Emperor</td>
+    <th class='same_f'>Tower</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Star</th>
+    <td class='triple_f'>Hermit</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Hermit</td>
+    <td class='same_f'>Star</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Moon</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Chariot</td>
+    <th class='same_f'>Star</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Moon</th>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Star</td>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Death</td>
+    <td class='same_f'>Moon</td>
+    <td class='double_f'>Strength</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Hierophant</td>
+    <th class='same_f'>Moon</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Sun</th>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Death</td>
+    <td class='same_f'>Sun</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Priestess</td>
+    <th class='same_f'>Sun</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Judgement</th>
+    <td class='triple_f'>Temperance</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Temperance</td>
+    <td class='triple_f'>Star</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Temperance</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Temperance</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Hermit</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='same_f'>Judgement</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Hanged Man</td>
+    <th class='same_f'>Judgement</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Jester</th>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Star</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Hermit</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Death</td>
+    <td class='same_f'>Jester</td>
+    <td class='double_f'>Devil</td>
+    <th class='same_f'>Jester</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Aeon</th>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Star</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Justice</td>
+    <td class='triple_f'>Temperance</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Hermit</td>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='same_f'>Aeon</td>
+    <th class='same_f'>Aeon</th>
+  </tr>
+  <tr>
+    <th class='triple_f'>(xyz)</th>
+    <th class='same_f'>Fool</th>
+    <th class='same_f'>Magician</th>
+    <th class='same_f'>Priestess</th>
+    <th class='same_f'>Empress</th>
+    <th class='same_f'>Emperor</th>
+    <th class='same_f'>Hierophant</th>
+    <th class='same_f'>Lovers</th>
+    <th class='same_f'>Chariot</th>
+    <th class='same_f'>Justice</th>
+    <th class='same_f'>Hermit</th>
+    <th class='same_f'>Fortune</th>
+    <th class='same_f'>Strength</th>
+    <th class='same_f'>Hanged Man</th>
+    <th class='same_f'>Death</th>
+    <th class='same_f'>Temperance</th>
+    <th class='same_f'>Devil</th>
+    <th class='same_f'>Tower</th>
+    <th class='same_f'>Star</th>
+    <th class='same_f'>Moon</th>
+    <th class='same_f'>Sun</th>
+    <th class='same_f'>Judgement</th>
+    <th class='same_f'>Jester</th>
+    <th class='same_f'>Aeon</th>
+    <th class='same_f'>(xx/xxx)</th>
+  </tr>
+</table>
+</body>
+</html>

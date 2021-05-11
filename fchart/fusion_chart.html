@@ -1,0 +1,1399 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <link rel='stylesheet' href='fusion_chart.css'>
+  <meta charset='UTF-8'>
+  <title>Fusion Chart/Compendium</title>
+</head>
+<body>
+<h1>P4G Fusion Chart/Compendium</h1><br>
+<a href='../index.html'>Home</a><br><br>
+
+<!-- #region Special Fusions -->
+<b><u>Special Fusions</u></b><br>
+<div>
+  <b>Normal Spread</b><br>
+  <ul class='fuse_results'>
+    <li>Alice (Death 72)</li>
+    <li>Ardha (Judgement 90)</li>
+    <li>Shiva (Tower 80)</li>
+    <li>Slime (Chariot 2)</li>
+    <li>Ukobach (Devil 3)</li>
+  </ul>
+  <ul class='fuse_mats'>
+    <li>Nebiros (Hermit 63) + Belial (Devil 68)</li>
+    <li>Parvati (Priestess 37) + Shiva (Tower 80)</li>
+    <li>Rangda (Magician 47) + Barong (Emperor 65)</li>
+    <li>Eligor (Chariot 12) + Nata Taishi (Chariot 6)</li>
+    <li>Lilim (Devil 10) + Vetala (Devil 19)</li>
+  </ul>
+</div>
+<div style='margin-left:30px'>
+  <b>Triangle Spread</b><br>
+  <ul class='fuse_results'>
+    <li>Norn (Fortune 72)</li>
+  </ul>
+  <ul class='fuse_mats'>
+    <li>Atropos (Fortune 65) + Lachesis (Fortune 51) + Clotho (Fortune 44)</li>
+  </ul>
+</div><br><br><br>
+<div>
+  <b>Cross Spread</b><br>
+  <ul class='fuse_results'>
+    <li>Kohryu (Hierophant 76)</li>
+    <li>Neko Shogun (Star 32)</li>
+    <li>Ongyo-ki (Hermit 82)</li>
+    <li>Tam Lin (Sun 53)</li>
+  </ul>
+  <ul class='fuse_mats'>
+    <li>Genbu (Temperance 40) + Seiryuu (Temperance 47) + Suzaku (Temperance 54) + Byakko (Temperance 62)</li>
+    <li>Saki Mitama (Priestess 11) + Ara Mitama (Chariot 18) + Kusi Mitama (Strength 28) + Nigi Mitama (Temperance
+      23)</li>
+    <li>Oni (Strength 30) + Fuu-ki (Star 43) + Kin-ki (Chariot 54) + Sui-ki (Moon 57)</li>
+    <li>Phoenix (Sun 20) + Gdon (Sun 31) + Yatagarasu (Sun 40) + Narasimha (Sun 47)</li>
+  </ul>
+</div><br><br><br>
+<div>
+  <b>Pentagon Spread</b><br>
+  <ul class='fuse_results'>
+    <li>Black Frost (Fool 38)</li>
+    <li>Futsunushi (Chariot 80)</li>
+    <li>Yatsufusa (Hanged Man 49)</li>
+    <li>Yoshitsune (Tower 75)</li>
+  </ul>
+  <ul class='fuse_mats'>
+    <li>Jack Frost (Magician 16) + Pyro Jack (Magician 32) + King Frost (Emperor 22) + Pixie (Magician 2) + Ghoul
+      (Death 9)</li>
+    <li>Ares (Chariot 25) + Triglav (Chariot 43) + Kin-ki (Chariot 54) + Atavaka (Chariot 72) + Neko Shogun (Star
+      32)</li>
+    <li>Makami (Hanged Man 39) + Orthrus (Hanged Man 39) + Mothman (Hermit 33) + Thoth (Emperor 45) + Narasimha (Sun
+      47)</li>
+    <li>Masakado (Tower 69) + Shiki-Ouji (Fool 56) + Oukuninushi (Emperor 41) + Hachiman (Hierophant 70) +
+      Hitokotonusi (Hermit 41)</li>
+  </ul>
+</div><br><br><br>
+<div>
+  <b>Hexagon Spread</b><br>
+  <ul class='fuse_results'>
+    <li>Beelzebub (Devil 81)</li>
+    <li>Lucifer (Judgement 93)</li>
+    <li>Mahakala (Death 78)</li>
+    <li>Trumpeter (Judgement 67)</li>
+  </ul>
+  <ul class='fuse_mats'>
+    <li>Pazuzu (Devil 37) + Belphegor (Devil 61) + Belial (Devil 68) + Mot (Death 46) + Seth (Moon 68) + Baal Zebul
+      (Moon 77)</li>
+    <li>Ananta (Fortune 58) + Anubis (Judgement 59) + Trumpeter (Judgement 67) + Michael (Judgement 72) + Satan
+      (Judgement 76) + Metatron (Judgement 83)</li>
+    <li>Matador (Death 24) + White Rider (Death 58) + Mother Harlot (Empress 60) + Daisoujou (Hierophant 60) + Hell
+      Biker (Hanged Man 66) + Trumpeter (Judgement 67)</li>
+    <li>Matador (Death 24) + White Rider (Death 58) + Daisoujou (Hierophant 60) + Taotie (Tower 35) + Papilsag
+      (Emperor 51) + Taowu (Hanged Man 56)</li>
+  </ul>
+</div><br><br><br>
+<div>
+  <b>Dodecagon Spread</b><br>
+  <ul class='fuse_results'>
+    <li>Izanagi-no-Okami (World 91)</li>
+  </ul>
+  <ul class='fuse_mats'>
+    <li>Izanagi (Fool 1) + Sandman (Strength 5) + Nata Taishi (Chariot 6) + Girimehkala (Moon 48) + Norn (Fortune
+      72) + Oukuninushi (Emperor 41) +<br>
+      Orthrus (Hanged Man 39) + Kartikeya (Star 67) + Mithra (Temperance 31) + Tzitzimitl (Priestess 70) + Cu
+      Chulainn (Tower 46) + Legion (Fool 21)</li>
+  </ul>
+</div><br><br><br>
+<!-- #endregion -->
+
+<!-- #region Personas -->
+<div id='persona_base'>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Fool</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=loki' target='_blank'>Loki</a></li>
+      <li><a href='../compendium/persona.html?persona=shiki-ouji' target='_blank'>Shiki-Ouji</a></li>
+      <li><a href='../compendium/persona.html?persona=decarabia' target='_blank'>Decarabia</a></li>
+      <li><a href='../compendium/persona.html?persona=black-frost' target='_blank'>Black Frost</a></li>
+      <li><a href='../compendium/persona.html?persona=ose' target='_blank'>Ose</a></li>
+      <li><a href='../compendium/persona.html?persona=legion' target='_blank'>Legion</a></li>
+      <li><a href='../compendium/persona.html?persona=obariyon' target='_blank'>Obariyon</a></li>
+      <li><a href='../compendium/persona.html?persona=yomotsu-shikome' target='_blank'>Yomotsu-Shikome</a></li>
+      <li><a href='../compendium/persona.html?persona=izanagi' target='_blank'>Izanagi</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>64</li>
+      <li>56</li>
+      <li>46</li>
+      <li>38</li>
+      <li>31</li>
+      <li>21</li>
+      <li>13</li>
+      <li>7</li>
+      <li>1</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Magician</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=mada' target='_blank'>Mada</a></li>
+      <li><a href='../compendium/persona.html?persona=surt' target='_blank'>Surt</a></li>
+      <li><a href='../compendium/persona.html?persona=jinn' target='_blank'>Jinn</a></li>
+      <li><a href='../compendium/persona.html?persona=rangda' target='_blank'>Rangda</a></li>
+      <li><a href='../compendium/persona.html?persona=dis' target='_blank'>Dis</a></li>
+      <li><a href='../compendium/persona.html?persona=pyro-jack' target='_blank'>Pyro Jack</a></li>
+      <li><a href='../compendium/persona.html?persona=hua-po' target='_blank'>Hua Po</a></li>
+      <li><a href='../compendium/persona.html?persona=jack-frost' target='_blank'>Jack Frost</a></li>
+      <li><a href='../compendium/persona.html?persona=orobas' target='_blank'>Orobas</a></li>
+      <li><a href='../compendium/persona.html?persona=pixie' target='_blank'>Pixie</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>78</li>
+      <li>69</li>
+      <li>62</li>
+      <li>47</li>
+      <li>39</li>
+      <li>32</li>
+      <li>25</li>
+      <li>16</li>
+      <li>8</li>
+      <li>2</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Priestess</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=scathach' target='_blank'>Scathach</a></li>
+      <li><a href='../compendium/persona.html?persona=tzitzimitl' target='_blank'>Tzitzimitl</a></li>
+      <li><a href='../compendium/persona.html?persona=hariti' target='_blank'>Hariti</a></li>
+      <li><a href='../compendium/persona.html?persona=kikuri-hime' target='_blank'>Kikuri-Hime</a></li>
+      <li><a href='../compendium/persona.html?persona=parvati' target='_blank'>Parvati</a></li>
+      <li><a href='../compendium/persona.html?persona=ganga' target='_blank'>Ganga</a></li>
+      <li><a href='../compendium/persona.html?persona=high-pixie' target='_blank'>High Pixie</a></li>
+      <li><a href='../compendium/persona.html?persona=sarasvati' target='_blank'>Sarasvati</a></li>
+      <li><a href='../compendium/persona.html?persona=saki-mitama' target='_blank'>Saki Mitama</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>79</li>
+      <li>70</li>
+      <li>59</li>
+      <li>48</li>
+      <li>37</li>
+      <li>29</li>
+      <li>22</li>
+      <li>17</li>
+      <li>11</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Empress</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=isis' target='_blank'>Isis</a></li>
+      <li><a href='../compendium/persona.html?persona=alilat' target='_blank'>Alilat</a></li>
+      <li><a href='../compendium/persona.html?persona=mother-harlot' target='_blank'>Mother Harlot</a></li>
+      <li><a href='../compendium/persona.html?persona=skadi' target='_blank'>Skadi</a></li>
+      <li><a href='../compendium/persona.html?persona=gabriel' target='_blank'>Gabriel</a></li>
+      <li><a href='../compendium/persona.html?persona=gorgon' target='_blank'>Gorgon</a></li>
+      <li><a href='../compendium/persona.html?persona=titania' target='_blank'>Titania</a></li>
+      <li><a href='../compendium/persona.html?persona=yaksini' target='_blank'>Yaksini</a></li>
+      <li><a href='../compendium/persona.html?persona=senri' target='_blank'>Senri</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>79</li>
+      <li>70</li>
+      <li>60</li>
+      <li>52</li>
+      <li>44</li>
+      <li>34</li>
+      <li>26</li>
+      <li>18</li>
+      <li>9</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Emperor</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=odin' target='_blank'>Odin</a></li>
+      <li><a href='../compendium/persona.html?persona=barong' target='_blank'>Barong</a></li>
+      <li><a href='../compendium/persona.html?persona=pabilsag' target='_blank'>Pabilsag</a></li>
+      <li><a href='../compendium/persona.html?persona=thoth' target='_blank'>Thoth</a></li>
+      <li><a href='../compendium/persona.html?persona=oukuninushi' target='_blank'>Oukuninushi</a></li>
+      <li><a href='../compendium/persona.html?persona=setanta' target='_blank'>Setanta</a></li>
+      <li><a href='../compendium/persona.html?persona=king-frost' target='_blank'>King Frost</a></li>
+      <li><a href='../compendium/persona.html?persona=oberon' target='_blank'>Oberon</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>74</li>
+      <li>65</li>
+      <li>51</li>
+      <li>45</li>
+      <li>41</li>
+      <li>34</li>
+      <li>22</li>
+      <li>12</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Hierophant</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=kohryu' target='_blank'>Kohryu</a></li>
+      <li><a href='../compendium/persona.html?persona=hachiman' target='_blank'>Hachiman</a></li>
+      <li><a href='../compendium/persona.html?persona=daisoujou' target='_blank'>Daisoujou</a></li>
+      <li><a href='../compendium/persona.html?persona=cerberus' target='_blank'>Cerberus</a></li>
+      <li><a href='../compendium/persona.html?persona=hokuto-seikun' target='_blank'>Hokuto Seikun</a></li>
+      <li><a href='../compendium/persona.html?persona=flauros' target='_blank'>Flauros</a></li>
+      <li><a href='../compendium/persona.html?persona=unicorn' target='_blank'>Unicorn</a></li>
+      <li><a href='../compendium/persona.html?persona=shiisaa' target='_blank'>Shiisaa</a></li>
+      <li><a href='../compendium/persona.html?persona=anzu' target='_blank'>Anzu</a></li>
+      <li><a href='../compendium/persona.html?persona=omoikane' target='_blank'>Omoikane</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>76</li>
+      <li>70</li>
+      <li>60</li>
+      <li>52</li>
+      <li>45</li>
+      <li>36</li>
+      <li>29</li>
+      <li>21</li>
+      <li>15</li>
+      <li>7</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Lovers</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=ishtar' target='_blank'>Ishtar</a></li>
+      <li><a href='../compendium/persona.html?persona=cybele' target='_blank'>Cybele</a></li>
+      <li><a href='../compendium/persona.html?persona=raphael' target='_blank'>Raphael</a></li>
+      <li><a href='../compendium/persona.html?persona=leanan-sidhe' target='_blank'>Leanan Sidhe</a></li>
+      <li><a href='../compendium/persona.html?persona=undine' target='_blank'>Undine</a></li>
+      <li><a href='../compendium/persona.html?persona=queen-mab' target='_blank'>Queen Mab</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>71</li>
+      <li>64</li>
+      <li>53</li>
+      <li>42</li>
+      <li>33</li>
+      <li>25</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Chariot</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=futsunushi' target='_blank'>Futsunushi</a></li>
+      <li><a href='../compendium/persona.html?persona=atavaka' target='_blank'>Atavaka</a></li>
+      <li><a href='../compendium/persona.html?persona=thor' target='_blank'>Thor</a></li>
+      <li><a href='../compendium/persona.html?persona=kin-ki' target='_blank'>Kin-ki</a></li>
+      <li><a href='../compendium/persona.html?persona=triglav' target='_blank'>Triglav</a></li>
+      <li><a href='../compendium/persona.html?persona=ares' target='_blank'>Ares</a></li>
+      <li><a href='../compendium/persona.html?persona=ara-mitama' target='_blank'>Ara Mitama</a></li>
+      <li><a href='../compendium/persona.html?persona=eligor' target='_blank'>Eligor</a></li>
+      <li><a href='../compendium/persona.html?persona=nata-taishi' target='_blank'>Nata Taishi</a></li>
+      <li><a href='../compendium/persona.html?persona=slime' target='_blank'>Slime</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>80</li>
+      <li>72</li>
+      <li>65</li>
+      <li>54</li>
+      <li>43</li>
+      <li>25</li>
+      <li>18</li>
+      <li>12</li>
+      <li>6</li>
+      <li>2</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Justice</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=sraosha' target='_blank'>Sraosha</a></li>
+      <li><a href='../compendium/persona.html?persona=melchizedek' target='_blank'>Melchizedek</a></li>
+      <li><a href='../compendium/persona.html?persona=uriel' target='_blank'>Uriel</a></li>
+      <li><a href='../compendium/persona.html?persona=throne' target='_blank'>Throne</a></li>
+      <li><a href='../compendium/persona.html?persona=dominion' target='_blank'>Dominion</a></li>
+      <li><a href='../compendium/persona.html?persona=virtue' target='_blank'>Virtue</a></li>
+      <li><a href='../compendium/persona.html?persona=power' target='_blank'>Power</a></li>
+      <li><a href='../compendium/persona.html?persona=principality' target='_blank'>Principality</a></li>
+      <li><a href='../compendium/persona.html?persona=archangel' target='_blank'>Archangel</a></li>
+      <li><a href='../compendium/persona.html?persona=angel' target='_blank'>Angel</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>74</li>
+      <li>66</li>
+      <li>58</li>
+      <li>49</li>
+      <li>38</li>
+      <li>33</li>
+      <li>27</li>
+      <li>19</li>
+      <li>11</li>
+      <li>4</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Hermit</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=ongyo-ki' target='_blank'>Ongyo-ki</a></li>
+      <li><a href='../compendium/persona.html?persona=arahabaki' target='_blank'>Arahabaki</a></li>
+      <li><a href='../compendium/persona.html?persona=nebiros' target='_blank'>Nebiros</a></li>
+      <li><a href='../compendium/persona.html?persona=niddhoggr' target='_blank'>Niddhoggr</a></li>
+      <li><a href='../compendium/persona.html?persona=kurama-tengu' target='_blank'>Kurama Tengu</a></li>
+      <li><a href='../compendium/persona.html?persona=hitokotonusi' target='_blank'>Hitokotonusi</a></li>
+      <li><a href='../compendium/persona.html?persona=mothman' target='_blank'>Mothman</a></li>
+      <li><a href='../compendium/persona.html?persona=lamia' target='_blank'>Lamia</a></li>
+      <li><a href='../compendium/persona.html?persona=ippon-datara' target='_blank'>Ippon-Datara</a></li>
+      <li><a href='../compendium/persona.html?persona=forneus' target='_blank'>Forneus</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>82</li>
+      <li>73</li>
+      <li>63</li>
+      <li>55</li>
+      <li>48</li>
+      <li>41</li>
+      <li>33</li>
+      <li>26</li>
+      <li>17</li>
+      <li>6</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Fortune</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=norn' target='_blank'>Norn</a></li>
+      <li><a href='../compendium/persona.html?persona=atropos' target='_blank'>Atropos</a></li>
+      <li><a href='../compendium/persona.html?persona=ananta' target='_blank'>Ananta</a></li>
+      <li><a href='../compendium/persona.html?persona=lachesis' target='_blank'>Lachesis</a></li>
+      <li><a href='../compendium/persona.html?persona=clotho' target='_blank'>Clotho</a></li>
+      <li><a href='../compendium/persona.html?persona=fortuna' target='_blank'>Fortuna</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>72</li>
+      <li>65</li>
+      <li>58</li>
+      <li>51</li>
+      <li>44</li>
+      <li>35</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Strength</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=zaou-gongen' target='_blank'>Zaou-Gongen</a></li>
+      <li><a href='../compendium/persona.html?persona=siegfried' target='_blank'>Siegfried</a></li>
+      <li><a href='../compendium/persona.html?persona=kali' target='_blank'>Kali</a></li>
+      <li><a href='../compendium/persona.html?persona=hanuman' target='_blank'>Hanuman</a></li>
+      <li><a href='../compendium/persona.html?persona=oni' target='_blank'>Oni</a></li>
+      <li><a href='../compendium/persona.html?persona=kusi-mitama' target='_blank'>Kusi Mitama</a></li>
+      <li><a href='../compendium/persona.html?persona=rakshasa' target='_blank'>Rakshasa</a></li>
+      <li><a href='../compendium/persona.html?persona=titan' target='_blank'>Titan</a></li>
+      <li><a href='../compendium/persona.html?persona=valkyrie' target='_blank'>Valkyrie</a></li>
+      <li><a href='../compendium/persona.html?persona=sandman' target='_blank'>Sandman</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>90</li>
+      <li>63</li>
+      <li>50</li>
+      <li>42</li>
+      <li>30</li>
+      <li>28</li>
+      <li>23</li>
+      <li>14</li>
+      <li>8</li>
+      <li>5</li>
+    </ul>
+  </div><br>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Hanged Man</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=attis' target='_blank'>Attis</a></li>
+      <li><a href='../compendium/persona.html?persona=vasuki' target='_blank'>Vasuki</a></li>
+      <li><a href='../compendium/persona.html?persona=hell-biker' target='_blank'>Hell Biker</a></li>
+      <li><a href='../compendium/persona.html?persona=taowu' target='_blank'>Taowu</a></li>
+      <li><a href='../compendium/persona.html?persona=yatsufusa' target='_blank'>Yatsufusa</a></li>
+      <li><a href='../compendium/persona.html?persona=orthrus' target='_blank'>Orthrus</a></li>
+      <li><a href='../compendium/persona.html?persona=makami' target='_blank'>Makami</a></li>
+      <li><a href='../compendium/persona.html?persona=ikusa' target='_blank'>Ikusa</a></li>
+      <li><a href='../compendium/persona.html?persona=berith' target='_blank'>Berith</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>82</li>
+      <li>71</li>
+      <li>66</li>
+      <li>56</li>
+      <li>49</li>
+      <li>39</li>
+      <li>27</li>
+      <li>22</li>
+      <li>15</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Death</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=mahakala' target='_blank'>Mahakala</a></li>
+      <li><a href='../compendium/persona.html?persona=alice' target='_blank'>Alice</a></li>
+      <li><a href='../compendium/persona.html?persona=white-rider' target='_blank'>White Rider</a></li>
+      <li><a href='../compendium/persona.html?persona=mot' target='_blank'>Mot</a></li>
+      <li><a href='../compendium/persona.html?persona=samael' target='_blank'>Samael</a></li>
+      <li><a href='../compendium/persona.html?persona=matador' target='_blank'>Matador</a></li>
+      <li><a href='../compendium/persona.html?persona=mokoi' target='_blank'>Mokoi</a></li>
+      <li><a href='../compendium/persona.html?persona=ghoul' target='_blank'>Ghoul</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>78</li>
+      <li>72</li>
+      <li>58</li>
+      <li>46</li>
+      <li>36</li>
+      <li>24</li>
+      <li>14</li>
+      <li>9</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Temperance</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=vishnu' target='_blank'>Vishnu</a></li>
+      <li><a href='../compendium/persona.html?persona=yurlungur' target='_blank'>Yurlungur</a></li>
+      <li><a href='../compendium/persona.html?persona=byakko' target='_blank'>Byakko</a></li>
+      <li><a href='../compendium/persona.html?persona=suzaku' target='_blank'>Suzaku</a></li>
+      <li><a href='../compendium/persona.html?persona=seiryuu' target='_blank'>Seiryuu</a></li>
+      <li><a href='../compendium/persona.html?persona=genbu' target='_blank'>Genbu</a></li>
+      <li><a href='../compendium/persona.html?persona=mithra' target='_blank'>Mithra</a></li>
+      <li><a href='../compendium/persona.html?persona=nigi-mitama' target='_blank'>Nigi Mitama</a></li>
+      <li><a href='../compendium/persona.html?persona=xie-zhai' target='_blank'>Xiezhai</a></li>
+      <li><a href='../compendium/persona.html?persona=sylph' target='_blank'>Sylph</a></li>
+      <li><a href='../compendium/persona.html?persona=apsaras' target='_blank'>Apsaras</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>73</li>
+      <li>69</li>
+      <li>62</li>
+      <li>54</li>
+      <li>47</li>
+      <li>40</li>
+      <li>31</li>
+      <li>23</li>
+      <li>16</li>
+      <li>11</li>
+      <li>4</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Devil</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=beelzebub' target='_blank'>Beelzebub</a></li>
+      <li><a href='../compendium/persona.html?persona=belial' target='_blank'>Belial</a></li>
+      <li><a href='../compendium/persona.html?persona=belphegor' target='_blank'>Belphegor</a></li>
+      <li><a href='../compendium/persona.html?persona=lilith' target='_blank'>Lilith</a></li>
+      <li><a href='../compendium/persona.html?persona=succubus' target='_blank'>Succubus</a></li>
+      <li><a href='../compendium/persona.html?persona=pazuzu' target='_blank'>Pazuzu</a></li>
+      <li><a href='../compendium/persona.html?persona=incubus' target='_blank'>Incubus</a></li>
+      <li><a href='../compendium/persona.html?persona=vetala' target='_blank'>Vetala</a></li>
+      <li><a href='../compendium/persona.html?persona=lilim' target='_blank'>Lilim</a></li>
+      <li><a href='../compendium/persona.html?persona=ukobach' target='_blank'>Ukobach</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>81</li>
+      <li>68</li>
+      <li>61</li>
+      <li>53</li>
+      <li>44</li>
+      <li>37</li>
+      <li>28</li>
+      <li>19</li>
+      <li>10</li>
+      <li>3</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Tower</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=shiva' target='_blank'>Shiva</a></li>
+      <li><a href='../compendium/persona.html?persona=yoshitsune' target='_blank'>Yoshitsune</a></li>
+      <li><a href='../compendium/persona.html?persona=masakado' target='_blank'>Masakado</a></li>
+      <li><a href='../compendium/persona.html?persona=mara' target='_blank'>Mara</a></li>
+      <li><a href='../compendium/persona.html?persona=abaddon' target='_blank'>Abaddon</a></li>
+      <li><a href='../compendium/persona.html?persona=cu-chulainn' target='_blank'>Cu Chulainn</a></li>
+      <li><a href='../compendium/persona.html?persona=taotie' target='_blank'>Taotie</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>80</li>
+      <li>75</li>
+      <li>69</li>
+      <li>62</li>
+      <li>55</li>
+      <li>46</li>
+      <li>35</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Star</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=helel' target='_blank'>Helel</a></li>
+      <li><a href='../compendium/persona.html?persona=saturnus' target='_blank'>Saturnus</a></li>
+      <li><a href='../compendium/persona.html?persona=kartikeya' target='_blank'>Katikeya</a></li>
+      <li><a href='../compendium/persona.html?persona=garuda' target='_blank'>Garuda</a></li>
+      <li><a href='../compendium/persona.html?persona=ganesha' target='_blank'>Ganesha</a></li>
+      <li><a href='../compendium/persona.html?persona=fuu-ki' target='_blank'>Fuu-ki</a></li>
+      <li><a href='../compendium/persona.html?persona=neko-shogun' target='_blank'>Neko Shogun</a></li>
+      <li><a href='../compendium/persona.html?persona=kaiwan' target='_blank'>Kaiwan</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>87</li>
+      <li>75</li>
+      <li>67</li>
+      <li>57</li>
+      <li>50</li>
+      <li>43</li>
+      <li>32</li>
+      <li>24</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Moon</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=sandalphon' target='_blank'>Sandalphon</a></li>
+      <li><a href='../compendium/persona.html?persona=baal-zebul' target='_blank'>Ball Zebul</a></li>
+      <li><a href='../compendium/persona.html?persona=seth' target='_blank'>Seth</a></li>
+      <li><a href='../compendium/persona.html?persona=sui-ki' target='_blank'>Sui-ki</a></li>
+      <li><a href='../compendium/persona.html?persona=girimehkala' target='_blank'>Girimehkala</a></li>
+      <li><a href='../compendium/persona.html?persona=alraune' target='_blank'>Alraune</a></li>
+      <li><a href='../compendium/persona.html?persona=yamatano-orochi' target='_blank'>Yamatano-Orochi</a></li>
+      <li><a href='../compendium/persona.html?persona=nozuchi' target='_blank'>Nozuchi</a></li>
+      <li><a href='../compendium/persona.html?persona=andra' target='_blank'>Andra</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>84</li>
+      <li>77</li>
+      <li>68</li>
+      <li>57</li>
+      <li>48</li>
+      <li>41</li>
+      <li>34</li>
+      <li>27</li>
+      <li>20</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Sun</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=asura' target='_blank'>Asura</a></li>
+      <li><a href='../compendium/persona.html?persona=suparna' target='_blank'>Suparna</a></li>
+      <li><a href='../compendium/persona.html?persona=horus' target='_blank'>Horus</a></li>
+      <li><a href='../compendium/persona.html?persona=jatayu' target='_blank'>Jatayu</a></li>
+      <li><a href='../compendium/persona.html?persona=tam-lin' target='_blank'>Tam Lin</a></li>
+      <li><a href='../compendium/persona.html?persona=narasimha' target='_blank'>Narasimha</a></li>
+      <li><a href='../compendium/persona.html?persona=yatagarasu' target='_blank'>Yatagarasu</a></li>
+      <li><a href='../compendium/persona.html?persona=gdon' target='_blank'>Gdon</a></li>
+      <li><a href='../compendium/persona.html?persona=phoenix' target='_blank'>Phoenix</a></li>
+      <li><a href='../compendium/persona.html?persona=cu-sith' target='_blank'>Cu Sith</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>86</li>
+      <li>77</li>
+      <li>68</li>
+      <li>61</li>
+      <li>53</li>
+      <li>47</li>
+      <li>40</li>
+      <li>31</li>
+      <li>20</li>
+      <li>10</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Judgement</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=lucifer' target='_blank'>Lucifer</a></li>
+      <li><a href='../compendium/persona.html?persona=ardha' target='_blank'>Ardha</a></li>
+      <li><a href='../compendium/persona.html?persona=metatron' target='_blank'>Metatron</a></li>
+      <li><a href='../compendium/persona.html?persona=satan' target='_blank'>Satan</a></li>
+      <li><a href='../compendium/persona.html?persona=michael' target='_blank'>Michael</a></li>
+      <li><a href='../compendium/persona.html?persona=trumpeter' target='_blank'>Trumpeter</a></li>
+      <li><a href='../compendium/persona.html?persona=anubis' target='_blank'>Anubis</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>93</li>
+      <li>90</li>
+      <li>83</li>
+      <li>76</li>
+      <li>72</li>
+      <li>67</li>
+      <li>59</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Jester</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=magatsu-izanagi' target='_blank'>Magatsu Izanagi</a></li>
+      <li><a href='../compendium/persona.html?persona=seiten-taisei' target='_blank'>Seiten Taisei</a></li>
+      <li><a href='../compendium/persona.html?persona=chernobog' target='_blank'>Chernobog</a></li>
+      <li><a href='../compendium/persona.html?persona=kumbhanda' target='_blank'>Kumbhanda</a></li>
+      <li><a href='../compendium/persona.html?persona=baphomet' target='_blank'>Baphomet</a></li>
+      <li><a href='../compendium/persona.html?persona=loa' target='_blank'>Loa</a></li>
+      <li><a href='../compendium/persona.html?persona=pale-rider' target='_blank'>Pale Rider</a></li>
+      <li><a href='../compendium/persona.html?persona=take-minakata' target='_blank'>Take-Minakata</a></li>
+      <li><a href='../compendium/persona.html?persona=gurr' target='_blank'>Gurr</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>77</li>
+      <li>68</li>
+      <li>62</li>
+      <li>55</li>
+      <li>47</li>
+      <li>40</li>
+      <li>34</li>
+      <li>27</li>
+      <li>20</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>Aeon</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=kaguya' target='_blank'>Kaguya</a></li>
+      <li><a href='../compendium/persona.html?persona=laksmi' target='_blank'>Laksmi</a></li>
+      <li><a href='../compendium/persona.html?persona=kingu' target='_blank'>Kingu</a></li>
+      <li><a href='../compendium/persona.html?persona=quetzalcoatl' target='_blank'>Quetzalcoatl</a></li>
+      <li><a href='../compendium/persona.html?persona=kushinada' target='_blank'>Kushinada</a></li>
+      <li><a href='../compendium/persona.html?persona=raja-naga' target='_blank'>Raja Naga</a></li>
+      <li><a href='../compendium/persona.html?persona=sati' target='_blank'>Sati</a></li>
+      <li><a href='../compendium/persona.html?persona=narcissus' target='_blank'>Narcissus</a></li>
+      <li><a href='../compendium/persona.html?persona=ame-no-uzume' target='_blank'>Ame-no-Uzume</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>74</li>
+      <li>65</li>
+      <li>58</li>
+      <li>51</li>
+      <li>44</li>
+      <li>37</li>
+      <li>31</li>
+      <li>24</li>
+      <li>18</li>
+    </ul>
+  </div>
+  <div class='persona_block'>
+    <b class='persona_arcana'>World</b><br>
+    <ul class='persona_name'>
+      <li><a href='../compendium/persona.html?persona=izanagi-no-okami' target='_blank'>Izanagi-no-Okami</a></li>
+    </ul>
+    <ul class='persona_level'>
+      <li>91</li>
+    </ul>
+  </div>
+</div><br><br><br>
+<!-- #endregion -->
+
+<!-- #region Intrustions -->
+<h2>How to use fusion chart</h2>
+
+<div>
+  <b>Normal Spread:</b><br>
+  Use the blue part of fusion chart to determine it's arcana<br><br>
+  The result's base level is equal to or greater than<br>
+  (sum of both persona's base level) / 2 + 1
+</div>
+<div style='vertical-align:top; margin-left:20px'>
+  <b>Triangle Spread:</b><br>
+  Use the blue part of fusion chart with 2 lowest current level persona for a mid-fusion arcana<br>
+  Use the orange part of fusion part with the highest current level persona and the mid-fusion arcana to determine
+  the result's arcana<br><br>
+  The result's base level is equal to or greater than<br>
+  (sum of all 3 persona's base level) / 3 + 5
+</div><br><br><br>
+
+Hover highlights the arcana<br>
+Click makes the arcana stay lit<br>
+Click again to revert to normal<br><br>
+<!-- #endregion -->
+
+<button id='clearSelection'>Clear</button><br><br>
+<!-- #region Fusion Chart -->
+<table>
+  <tr>
+    <th class='same_f'>(xx/xxx)</th>
+    <th class='same_f'>Fool</th>
+    <th class='same_f'>Magician</th>
+    <th class='same_f'>Priestess</th>
+    <th class='same_f'>Empress</th>
+    <th class='same_f'>Emperor</th>
+    <th class='same_f'>Hierophant</th>
+    <th class='same_f'>Lovers</th>
+    <th class='same_f'>Chariot</th>
+    <th class='same_f'>Justice</th>
+    <th class='same_f'>Hermit</th>
+    <th class='same_f'>Fortune</th>
+    <th class='same_f'>Strength</th>
+    <th class='same_f'>Hanged Man</th>
+    <th class='same_f'>Death</th>
+    <th class='same_f'>Temperance</th>
+    <th class='same_f'>Devil</th>
+    <th class='same_f'>Tower</th>
+    <th class='same_f'>Star</th>
+    <th class='same_f'>Moon</th>
+    <th class='same_f'>Sun</th>
+    <th class='same_f'>Judgement</th>
+    <th class='same_f'>Jester</th>
+    <th class='same_f'>Aeon</th>
+    <th class='double_f'>(xy)</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Fool</th>
+    <td class='same_f'>Fool</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Death</td>
+    <th class='same_f'>Fool</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Magician</th>
+    <td class='triple_f'>Fortune</td>
+    <td class='same_f'>Magician</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Emperor</td>
+    <th class='same_f'>Magician</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Priestess</th>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='same_f'>Priestess</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Sun</td>
+    <th class='same_f'>Priestess</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Empress</th>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Temperance</td>
+    <td class='same_f'>Empress</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Temperance</td>
+    <th class='same_f'>Empress</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Emperor</th>
+    <td class='triple_f'>Hermit</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Justice</td>
+    <td class='triple_f'>Fool</td>
+    <td class='same_f'>Emperor</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Hanged Man</td>
+    <th class='same_f'>Emperor</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Hierophant</th>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='same_f'>Hierophant</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Moon</td>
+    <th class='same_f'>Hierophant</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Lovers</th>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Temperance</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='same_f'>Lovers</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Justice</td>
+    <th class='same_f'>Lovers</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Chariot</th>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='same_f'>Chariot</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Strength</td>
+    <th class='same_f'>Chariot</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Justice</th>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Hermit</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Temperance</td>
+    <td class='same_f'>Justice</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Strength</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Lovers</td>
+    <th class='same_f'>Justice</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Hermit</th>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='same_f'>Hermit</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Magician</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Moon</td>
+    <td class='double_f'>Magician</td>
+    <th class='same_f'>Hermit</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Fortune</th>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Temperance</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='same_f'>Fortune</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Priestess</td>
+    <th class='same_f'>Fortune</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Strength</th>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Hermit</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Justice</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='same_f'>Strength</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Sun</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Temperance</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Chariot</td>
+    <th class='same_f'>Strength</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Hanged Man</th>
+    <td class='triple_f'>Star</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Star</td>
+    <td class='triple_f'>Justice</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Star</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Star</td>
+    <td class='same_f'>Hanged Man</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Justice</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Devil</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Death</td>
+    <th class='same_f'>Hanged Man</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Death</th>
+    <td class='triple_f'>Star</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Devil</td>
+    <td class='same_f'>Death</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Empress</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Temperance</td>
+    <td class='double_f'>Hanged Man</td>
+    <th class='same_f'>Death</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Temperance</th>
+    <td class='triple_f'>Justice</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Justice</td>
+    <td class='triple_f'>Jester</td>
+    <td class='same_f'>Temperance</td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Star</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Hermit</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Death</td>
+    <td class='double_f'>Empress</td>
+    <th class='same_f'>Temperance</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Devil</th>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Hermit</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Justice</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Justice</td>
+    <td class='same_f'>Devil</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Hierophant</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Magician</td>
+    <th class='same_f'>Devil</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Tower</th>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Justice</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Star</td>
+    <td class='same_f'>Tower</td>
+    <td class='double_f'>Hanged Man</td>
+    <td class='double_f'>Priestess</td>
+    <td class='double_f'>Chariot</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Emperor</td>
+    <th class='same_f'>Tower</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Star</th>
+    <td class='triple_f'>Hermit</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Hermit</td>
+    <td class='same_f'>Star</td>
+    <td class='double_f'>Emperor</td>
+    <td class='double_f'>Moon</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Empress</td>
+    <td class='double_f'>Chariot</td>
+    <th class='same_f'>Star</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Moon</th>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Star</td>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Death</td>
+    <td class='same_f'>Moon</td>
+    <td class='double_f'>Strength</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Hermit</td>
+    <td class='double_f'>Hierophant</td>
+    <th class='same_f'>Moon</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Sun</th>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Death</td>
+    <td class='same_f'>Sun</td>
+    <td class='same_f'></td>
+    <td class='double_f'>Lovers</td>
+    <td class='double_f'>Priestess</td>
+    <th class='same_f'>Sun</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Judgement</th>
+    <td class='triple_f'>Temperance</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Temperance</td>
+    <td class='triple_f'>Star</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Temperance</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Temperance</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Hermit</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='same_f'>Judgement</td>
+    <td class='double_f'>Chariot</td>
+    <td class='double_f'>Hanged Man</td>
+    <th class='same_f'>Judgement</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Jester</th>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Star</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Devil</td>
+    <td class='triple_f'>Chariot</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Hermit</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Emperor</td>
+    <td class='triple_f'>Magician</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Priestess</td>
+    <td class='triple_f'>Aeon</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Death</td>
+    <td class='triple_f'>Hanged Man</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Death</td>
+    <td class='same_f'>Jester</td>
+    <td class='double_f'>Devil</td>
+    <th class='same_f'>Jester</th>
+  </tr>
+  <tr>
+    <th class='same_f'>Aeon</th>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Empress</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Star</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Justice</td>
+    <td class='triple_f'>Temperance</td>
+    <td class='triple_f'>Moon</td>
+    <td class='triple_f'>Fool</td>
+    <td class='triple_f'>Hermit</td>
+    <td class='triple_f'>Jester</td>
+    <td class='triple_f'>Strength</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='triple_f'>Lovers</td>
+    <td class='triple_f'>Fortune</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Tower</td>
+    <td class='triple_f'>Hierophant</td>
+    <td class='triple_f'>Sun</td>
+    <td class='triple_f'>Judgement</td>
+    <td class='same_f'>Aeon</td>
+    <th class='same_f'>Aeon</th>
+  </tr>
+  <tr>
+    <th class='triple_f'>(xyz)</th>
+    <th class='same_f'>Fool</th>
+    <th class='same_f'>Magician</th>
+    <th class='same_f'>Priestess</th>
+    <th class='same_f'>Empress</th>
+    <th class='same_f'>Emperor</th>
+    <th class='same_f'>Hierophant</th>
+    <th class='same_f'>Lovers</th>
+    <th class='same_f'>Chariot</th>
+    <th class='same_f'>Justice</th>
+    <th class='same_f'>Hermit</th>
+    <th class='same_f'>Fortune</th>
+    <th class='same_f'>Strength</th>
+    <th class='same_f'>Hanged Man</th>
+    <th class='same_f'>Death</th>
+    <th class='same_f'>Temperance</th>
+    <th class='same_f'>Devil</th>
+    <th class='same_f'>Tower</th>
+    <th class='same_f'>Star</th>
+    <th class='same_f'>Moon</th>
+    <th class='same_f'>Sun</th>
+    <th class='same_f'>Judgement</th>
+    <th class='same_f'>Jester</th>
+    <th class='same_f'>Aeon</th>
+    <th class='same_f'>(xx/xxx)</th>
+  </tr>
+</table>
+<!-- #endregion -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src='fusion_chart.js'></script>
+</body>
+
+</html>

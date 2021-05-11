@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dfdfdf;
+}
+
+div {
+  display: inline-block;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  user-select: none;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border: 2px solid #999999;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* #region  special fusions */
+.fuse_results {
+  float: left;
+}
+
+.fuse_mats {
+  float: right;
+  margin-left: 88px;
+}
+/* #endregion */
+
+/* #region  fusion chart */
+.same_f {
+  background-color: #030303;
+  color: #fcfcfc;
+}
+
+.triple_f {
+  background-color: #ffe099;
+}
+
+.double_f {
+  background-color: #a1f8ff;
+}
+/* #endregion */
+
+/* #region  persona list */
+#persona_base {
+  width: 1892px;
+}
+
+.persona_block {
+  background-color: #ebebeb;
+  text-align: center;
+  border: 1px solid black;
+  margin: 2px;
+  padding: 2px;
+  vertical-align: top;
+  width: 150px;
+  min-height: 212px;
+}
+
+.persona_arcana {
+  font-size: 23px;
+}
+
+.persona_name {
+  float: left;
+  text-align: left;
+}
+
+.persona_level {
+  float: right;
+  text-align: right;
+}
+/* #endregion */

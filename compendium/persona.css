@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dfdfdf;
+}
+
+table, th, td {
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: center;
+}
+
+th, td {
+  width: 55px;
+  height: 30px;
+}
+
+ul {
+  display:inline-block;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 150px;
+  height: 25px;
+  position: relative;
+  margin: -1px 0px;
+  text-align: center;
+  padding-top: 3px;
+}
+
+#name {
+  font-size: 22px;
+  display: inline-block;
+  width: 230px;
+  text-align: center;
+}
+
+#arcana {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+}
+
+#level {
+  display: inline-block;
+  width: 120px;
+}
+
+#element {
+  float: left;
+}
+
+#stat {
+  clear: left;
+  margin-top: 100px;
+}
+
+.bar_holder {
+  width: 297px;
+  padding: 0px;
+  text-align: left;
+}
+
+.statbar {
+  background-color: #4c5daa;
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#skill {
+  float: left;
+}
+
+#unlock {
+  float: right;
+}
+
+#unlock > li {
+  right: 1px;
+}

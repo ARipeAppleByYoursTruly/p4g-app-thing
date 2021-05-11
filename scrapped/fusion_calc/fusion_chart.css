@@ -1,0 +1,65 @@
+* {
+  user-select: none;
+}
+table, th, td {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  border: 2px solid #999999;
+}
+
+div {
+  display: inline-block;
+  position: relative;
+}
+
+.same_f {
+  background-color: #030303;
+  color: #fcfcfc;
+}
+
+.triple_f {
+  background-color: #ffe099;
+}
+
+.double_f {
+  background-color: #a1f8ff;
+}
+
+table, #switchJH, #clearSelection, #third_persona, .tie_box {
+  display: none;
+}
+
+#sub_but_1, #sub_but_2, #sub_but_3, #sub_but_r {
+  display: none;
+  position:absolute;
+}
+
+#sub_but_2 {
+  left: 250px;
+}
+
+#sub_but_3 {
+  left: 501px;
+}
+
+#sub_but_r {
+  left: 752px;
+}
+
+#button_1, #button_2, #button_3, #button_r {
+  display: inline-block;
+}
+
+#output {
+  display: inline-block;
+  position: absolute;
+  bottom: 37px;
+  font-size: 20px;
+  width: 300px;
+  /*Remove this after editing width to fit yamatano-orochi with extras*/
+  background-color: red;
+}

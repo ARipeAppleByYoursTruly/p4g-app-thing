@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel='stylesheet' href='persona.css'>
+  <meta charset="UTF-8">
+  <title>Compendium</title>
+</head>
+<body>
+<h1>P4G Compendium</h1><br>
+
+
+<span id='name'></span>
+<span id='arcana'></span>
+<span id='level'></span><br><br>
+
+<table id='element'>
+  <tr>
+    <th>Phys</th>
+    <th>Fire</th>
+    <th>Ice</th>
+    <th>Elec</th>
+    <th>Wind</th>
+    <th>Light</th>
+    <th>Dark</th>
+  </tr>
+  <tr>
+    <td id='phys'></td>
+    <td id='fire'></td>
+    <td id='ice'></td>
+    <td id='elec'></td>
+    <td id='wind'></td>
+    <td id='light'></td>
+    <td id='dark'></td>
+  </tr>
+</table>
+
+<table id='stat'>
+  <tr>
+    <th>St</th>
+    <td id='st'></td>
+    <td class='bar_holder'><span id='bar1' class='statbar'></span></td>
+  </tr>
+  <tr>
+    <th>Ma</th>
+    <td id='ma'></td>
+    <td class='bar_holder'><span id='bar2' class='statbar'></span></td>
+  </tr>
+  <tr>
+    <th>En</th>
+    <td id='en'></td>
+    <td class='bar_holder'><span id='bar3' class='statbar'></span></td>
+  </tr>
+  <tr>
+    <th>Ag</th>
+    <td id='ag'></td>
+    <td class='bar_holder'><span id='bar4' class='statbar'></span></td>
+  </tr>
+  <tr>
+    <th>Lu</th>
+    <td id='lu'></td>
+    <td class='bar_holder'><span id='bar5' class='statbar'></span></td>
+  </tr>
+</table>
+
+<div style='clear:left; width:300px; margin-top:35px'>
+  <b style='font-size:20px'>Learnable Skills</b><br><br>
+  <ul id='skill'></ul>
+  <ul id='unlock'></ul>
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<span>Didn't include inheritance type because skill cards are pretty easy to obtain</span>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src=persona.js></script>
+</body>
+</html>
